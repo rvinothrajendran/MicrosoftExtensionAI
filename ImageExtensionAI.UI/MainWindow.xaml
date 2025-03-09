@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="ImageExtensionAI.UI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImageExtensionAI.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="ImageExtensionAI.UI">
+
+    <ScrollViewer>
+
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Main Content Grid -->
+     
+        <Grid Grid.Row="0" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1200"/>
+                <!-- Image column with fixed width -->
+                <ColumnDefinition Width="Auto"/>
+                <!-- Vertical line column -->
+                <ColumnDefinition Width="*"/>
+                <!-- ContentPresenter column with remaining space -->
+            </Grid.ColumnDefinitions>
+
+            <!-- Image Control -->
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Canvas x:Name="ImageCanvas">
+                    <Border CornerRadius="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image x:Name="SelectedImage" Stretch="Uniform" Width="1000" Height="1000" />
+                    </Border>
+                </Canvas>
+                </ScrollViewer>
+
+                <!-- Vertical Line (Border) -->
+            <Border Grid.Column="1" Width="1" Background="Black" Margin="10,0"/>
+
+            <!-- ContentPresenter -->
+            <StackPanel Grid.Column="2" VerticalAlignment="Top">
+                <TextBlock Text="Image Summary" FontSize="25" FontStretch="SemiExpanded"/>
+                <ContentPresenter x:Name="ImageSummary" Margin="10" FontSize="20" TextWrapping="WrapWholeWords"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Browse and Analysis buttons in the second row -->
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Browse Button -->
+            <Button Content="Browse" Click="ButtonBase_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <!-- Analysis Button -->
+            <Button Grid.Column="1" Content="Analysis" Click="Analysis_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <ProgressRing x:Name="ProgressRing" Visibility="Collapsed" Width="200" Height="200" />
+
+        </Grid>
+
+        
+
+    </ScrollViewer>
+
+
+
+
+
+</Window>

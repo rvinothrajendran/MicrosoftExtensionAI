@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ImageExtensionAI.UI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ImageExtensionAI.UI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

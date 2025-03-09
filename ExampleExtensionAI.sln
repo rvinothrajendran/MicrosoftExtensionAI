@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35507.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01HelloExtension", "01HelloExtension", "{CCB785B0-20AB-4E21-99B4-AEC7EC6FDEF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloExtensionAI", "HelloExtensionAI\HelloExtensionAI.csproj", "{FD27E029-BDE5-4D54-885A-59051096D4FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02ExtensionAIWebHost", "02ExtensionAIWebHost", "{1DC094FF-680B-4A14-AFEB-E8F8C48B08AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWebAppTest", "ConsoleWebAppTest\ConsoleWebAppTest.csproj", "{BAFEC7A9-CDDD-48B3-98F9-C8EB896A4898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionAIWebApp", "ExtensionAIWebApp\ExtensionAIWebApp.csproj", "{8C03EFFD-5F47-44AB-81A5-8504ED935B8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03Embedding", "03Embedding", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddingSample", "EmbeddingSample\EmbeddingSample.csproj", "{8F830E39-EA8C-4A06-B337-2FA9662DFA0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04FunctionCall", "04FunctionCall", "{4C8C6799-436C-4121-BFA3-41DAFD87BBAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionCall", "FunctionCall\FunctionCall.csproj", "{E100D357-34F2-4B0D-88B0-26930588EEE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05Middleware", "05Middleware", "{D8512129-F983-459B-959F-BC2721379CBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middleware", "Middleware\Middleware.csproj", "{CEB24809-7165-4117-88B5-A64A081C3266}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06ImageNotification", "06ImageNotification", "{BDC4DB0F-8C31-46D7-B1FE-C3DC3F35AEB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageExtensionAI.UI", "ImageExtensionAI.UI\ImageExtensionAI.UI.csproj", "{B5B62A3D-973C-1245-8117-01C577400452}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD27E029-BDE5-4D54-885A-59051096D4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD27E029-BDE5-4D54-885A-59051096D4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD27E029-BDE5-4D54-885A-59051096D4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD27E029-BDE5-4D54-885A-59051096D4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFEC7A9-CDDD-48B3-98F9-C8EB896A4898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFEC7A9-CDDD-48B3-98F9-C8EB896A4898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFEC7A9-CDDD-48B3-98F9-C8EB896A4898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFEC7A9-CDDD-48B3-98F9-C8EB896A4898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C03EFFD-5F47-44AB-81A5-8504ED935B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C03EFFD-5F47-44AB-81A5-8504ED935B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C03EFFD-5F47-44AB-81A5-8504ED935B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C03EFFD-5F47-44AB-81A5-8504ED935B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F830E39-EA8C-4A06-B337-2FA9662DFA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F830E39-EA8C-4A06-B337-2FA9662DFA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F830E39-EA8C-4A06-B337-2FA9662DFA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F830E39-EA8C-4A06-B337-2FA9662DFA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E100D357-34F2-4B0D-88B0-26930588EEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E100D357-34F2-4B0D-88B0-26930588EEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E100D357-34F2-4B0D-88B0-26930588EEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E100D357-34F2-4B0D-88B0-26930588EEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB24809-7165-4117-88B5-A64A081C3266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB24809-7165-4117-88B5-A64A081C3266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB24809-7165-4117-88B5-A64A081C3266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB24809-7165-4117-88B5-A64A081C3266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B62A3D-973C-1245-8117-01C577400452}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B5B62A3D-973C-1245-8117-01C577400452}.Debug|Any CPU.Build.0 = Debug|x64
+		{B5B62A3D-973C-1245-8117-01C577400452}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{B5B62A3D-973C-1245-8117-01C577400452}.Release|Any CPU.ActiveCfg = Release|x64
+		{B5B62A3D-973C-1245-8117-01C577400452}.Release|Any CPU.Build.0 = Release|x64
+		{B5B62A3D-973C-1245-8117-01C577400452}.Release|Any CPU.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD27E029-BDE5-4D54-885A-59051096D4FE} = {CCB785B0-20AB-4E21-99B4-AEC7EC6FDEF9}
+		{BAFEC7A9-CDDD-48B3-98F9-C8EB896A4898} = {1DC094FF-680B-4A14-AFEB-E8F8C48B08AF}
+		{8C03EFFD-5F47-44AB-81A5-8504ED935B8B} = {1DC094FF-680B-4A14-AFEB-E8F8C48B08AF}
+		{8F830E39-EA8C-4A06-B337-2FA9662DFA0B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E100D357-34F2-4B0D-88B0-26930588EEE4} = {4C8C6799-436C-4121-BFA3-41DAFD87BBAE}
+		{CEB24809-7165-4117-88B5-A64A081C3266} = {D8512129-F983-459B-959F-BC2721379CBD}
+		{B5B62A3D-973C-1245-8117-01C577400452} = {BDC4DB0F-8C31-46D7-B1FE-C3DC3F35AEB0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A8162A4-5B10-4CA2-B15F-C932700BBEAE}
+	EndGlobalSection
+EndGlobal
